@@ -23,5 +23,5 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 sl.dataframe(fruits_to_show)
 
 # New Section to Display Fruityvice API Response
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+fruityvice_response = rq.get("https://fruityvice.com/api/fruit/watermelon")
 sl.text(fruityvice_response)

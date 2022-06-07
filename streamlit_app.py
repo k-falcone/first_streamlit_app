@@ -24,6 +24,9 @@ sl.dataframe(fruits_to_show)
 
 # New Section to Display Fruityvice API Response
 sl.header('Fruityvice Fruit Advice!')
+fruit_choice = sl.text_input('What fruit would you like information about?', 'Kiwi')
+sl.write('The user entered', fruit_choice)
+
 fruityvice_response = rq.get("https://fruityvice.com/api/fruit/" + "kiwi")
 
 # take the json version of the response and normalize it
